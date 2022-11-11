@@ -1,0 +1,57 @@
+CREATE TABLE cats(
+cat_id int NOT null AUTO_INCREMENT,
+name varchar(100),
+breed varchar(100),
+    age int,
+PRIMARY key (cat_id)
+);
+
+INSERT INTO cats(name,breed,age)
+VALUES('ringo','tobby',4),
+      ('cindy','maine coon',10),
+      ('dumbldore','maincoon',10),
+      ('egg','persian',4),
+      ('misty','tabby',13),
+      ('goorge michael','ragboll',9),
+      ('jackson','sphynx',3);
+      SELECT*from cats;
+      //select
+      select cat_id from cats;
+      select name from cats;
+      select name,age from cats where breed='Tabby';
+      select cat_id,age from cate where cat_id=age;
+      //update
+      UPDATE cats SET name='jack'where name='jackson';
+      select*from cats;
+      UPDATE cats SET breed='british shortail'where name='ringo';
+      select*from cats;
+      UPDATE cats SET age=12 where breed='maine coon';
+      select*from cats;
+      //delete
+      delete from cats where age=4;
+      select*from cats;
+      delete from cats where cat_id=age;
+      select*from cats;
+      delete from cats;
+      select*from cats;
+      desc cats;
+      
+      
+      
+     create table shirts(
+shirt_id int not null auto_increment,
+article varchar(100),
+color varchar(100),
+shirt_size varchar(100),
+last_worn int,
+primary key(shirt_id)
+);
+insert into shirts(article,color,shirt_size,last_worn)
+values('t_shirt','white','s',10),
+      ('t_shirt','green','s',200),
+      ('polo_shirt','black','m',10),
+      ('tank_top','biue','s',50),
+      ('t_shirt','pink','s',0),
+      ('polo_shirt','red','m',5),
+      ('tank_top','white','s',200),
+      ('tank_top','blue','m',15); 
